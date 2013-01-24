@@ -3,7 +3,7 @@
 <head>
 	<?= $this->_render('element', 'head', array(), array('library' => 'li3_bootstrap')); ?>
 </head>
-<body class="app" data-spy="scroll">
+<body class="app">
 	<?= $this->_render('element', 'topnav', array(), array('library' => 'li3_bootstrap')); ?>
 	<div class="container">
 		<header id="header">
