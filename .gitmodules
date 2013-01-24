@@ -1,3 +1,12 @@
 [submodule "libraries/lithium"]
 	path = libraries/lithium
 	url = git://github.com/UnionOfRAD/lithium.git
+[submodule "libraries/li3_bootstrap"]
+	path = libraries/li3_bootstrap
+	url = https://github.com/bruensicke/li3_bootstrap.git
+[submodule "libraries/li3_mustache"]
+	path = libraries/li3_mustache
+	url = https://github.com/bruensicke/li3_mustache.git
+[submodule "libraries/radium"]
+	path = libraries/radium
+	url = https://github.com/bruensicke/radium.git
