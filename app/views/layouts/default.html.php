@@ -1,31 +1,21 @@
-<?php
-/**
- * Lithium: the most rad php framework
- *
- * @copyright     Copyright 2013, Union of RAD (http://union-of-rad.org)
- * @license       http://opensource.org/licenses/bsd-license.php The BSD License
- */
-?>
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html class="<?= \lithium\core\Environment::get(); ?>">
 <head>
-	<?php echo $this->html->charset();?>
-	<title>Application &gt; <?php echo $this->title(); ?></title>
-	<?php echo $this->html->style(array('debug', 'lithium')); ?>
-	<?php echo $this->scripts(); ?>
-	<?php echo $this->html->link('Icon', null, array('type' => 'icon')); ?>
+	<?= $this->_render('element', 'head', array(), array('library' => 'li3_bootstrap')); ?>
 </head>
-<body class="app">
-	<div id="container">
-		<div id="header">
-			<h1>Application</h1>
-			<h2>
-				Powered by <?php echo $this->html->link('Lithium', 'http://lithify.me/'); ?>.
-			</h2>
-		</div>
+<body class="app" data-spy="scroll">
+	<?= $this->_render('element', 'topnav', array(), array('library' => 'li3_bootstrap')); ?>
+	<div class="container">
+		<header id="header">
+			<?= $this->_render('element', 'header', array(), array('library' => 'li3_bootstrap')); ?>
+		</header>
 		<div id="content">
-			<?php echo $this->content(); ?>
+			<?= $this->content(); ?>
 		</div>
+		<footer id="footer">
+			<?= $this->_render('element', 'footer', array(), array('library' => 'li3_bootstrap')); ?>
+		</footer>
 	</div>
+	<?= $this->_render('element', 'bottom', array(), array('library' => 'li3_bootstrap')); ?>
 </body>
 </html>
